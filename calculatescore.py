@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 from math import log
+from sklearn.metrics import f1_score, recall_score, precision_score
 
 def preprocess_row(row):
     row = [max(min(p, 1 - 10e-15), 10e-15) for p in row]
@@ -32,7 +33,7 @@ def evaluate(gold_path, predictions_path):
     gold = gold.values[:,1:].astype(int)
 
     f1 = f1_score(gold, predictions, average=None)
-    precision = precision_score(y_true, y_pred, average=None)
-    recall = recall_score(y_true, y_pred, average=None)
+    precision = precision_score(gold, predictions, average=None)
+    recall = recall_score(gold, predictions, average=None)
     
     return precision, recall, f1

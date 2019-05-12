@@ -19,9 +19,9 @@ In this project, we worked with the Gendered Ambiguous Pronouns (GAP) dataset. B
 
 We compared the gender bias in this dataset with the commonly used OntoNotes dataset.
 
-![alt text](https://github.com/FrederikWarburg/NeuralCoref/blob/master/images/onto_notes.png)
+![alt text](/images/onto_notes.png)
 
-![alt text](https://github.com/FrederikWarburg/NeuralCoref/blob/master/images/gap.png)
+![alt text](/images/gap.png)
 
 ## Our toolbox for mitigating gender bias
 
@@ -29,7 +29,7 @@ We compared the gender bias in this dataset with the commonly used OntoNotes dat
 
 Here is examples of different gender neutral pronoun schemes. We experimented with all of them.
 
-![alt text](https://github.com/FrederikWarburg/NeuralCoref/blob/master/images/pronoun_scheme.png)
+![alt text](/images/pronoun_scheme.png)
 
 ### Unbiased embeddings
 
@@ -40,14 +40,14 @@ $d_i = ||job_i - man|| - ||job_i - woman||$
 This means that a negative distance indicates that the job title is more closer to a man than woman and vice versa. We see that the Google Debiased Embedding has significantly less bias than the Glove Embedding.
 
 Glove Embedding
-![alt text](https://github.com/FrederikWarburg/NeuralCoref/blob/master/images/glove.png)
+![alt text](/images/glove.png)
 
 Google News Debiased Embedding
-![alt text](https://github.com/FrederikWarburg/NeuralCoref/blob/master/images/google_debiased.png)
+![alt text](/images/google_debiased.png)
 
 We take the absolute distance of all the distance calculate by the above discribed approach, such that we can compare multiple embeddings for gender bias in one plot.
 
-![alt text](https://github.com/FrederikWarburg/NeuralCoref/blob/master/images/comparison.png)
+![alt text](/images/comparison.png)
 
 We see that the Word Dependency Embedding and the Google News Debiased Embedding has the lowest gender bias.
 
@@ -55,9 +55,9 @@ We see that the Word Dependency Embedding and the Google News Debiased Embedding
 
 We report the gender bias and the performance for our tested models in the following to tables.
 
-![alt text](https://github.com/FrederikWarburg/NeuralCoref/blob/master/images/performance.png)
+![alt text](/images/performance.png)
 
-![alt text](https://github.com/FrederikWarburg/NeuralCoref/blob/master/images/bias.png)
+![alt text](/images/bias.png)
 
 
 

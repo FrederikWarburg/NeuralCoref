@@ -14,7 +14,8 @@ In this paper we study gender bias in neural pronoun resolution models. Pronoun 
 
 In this project, we worked with the Gendered Ambiguous Pronouns (GAP) dataset. Below is an example of how this dataset is formatted.
 
-![alt text](https://github.com/FrederikWarburg/NeuralCoref/blob/master/images/example.png)
+![GitHub Logo](/images/example.png)
+![alt text](/images/example.png)
 
 We compared the gender bias in this dataset with the commonly used OntoNotes dataset.
 

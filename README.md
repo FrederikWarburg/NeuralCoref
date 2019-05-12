@@ -34,7 +34,7 @@ Here is examples of different gender neutral pronoun schemes. We experimented wi
 
 We found that most word embeddings have gender bias. This is probably inheriented from the data they have been trained on. Here we show a comparison between the commonly used Glove 840 300 word embedding and the Google News Debiased embedding. We check for gender bias as the distance between a job title and the word man / woman. We use 20 stereotypical female / male jobs (red / blue in the plots). More precisely, we calculate
 
-d_i = ||job_i - man|| - ||job_i - woman||
+![alt text](/images/equation.png)
 
 This means that a negative distance indicates that the job title is more closer to a man than woman and vice versa. We see that the Google Debiased Embedding has significantly less bias than the Glove Embedding.
 
